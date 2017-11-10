@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="contentWrapper">
+        <header>
+            <div class="container">
+                <img class="logoImg" src="images/logo.png" alt="logo_img">
+            </div>
+        </header>
+        <div class="mainArea container">
+            <div class="surveyProgressContainer">
+                <div class="surveyProgress">
+                    1
+                </div>
+            </div>
+            <div class="caption">
+                ERZÄHL UNS ETWAS ÜBER DICH
+            </div>
+            <div class="mainAreaWrapper">
+                <div class="surveyArea">
+                    <div id="step-1" class="surveyAreaStep active">
+                        <div class="tooltip">
+                            <span class="tooltipCaption">Hallo, Ich bin...</span>
+                            <button type="button" class="tooltipButton" onclick="goToNextQstn()">männlich</button>
+                            <button type="button" class="tooltipButton" onclick="goToNextQstn()">weiblich</button>
+                        </div>
+                    </div>
+                    <div id="step-2" class="surveyAreaStep"></div>
+                    <div id="step-3" class="surveyAreaStep"></div>
+                    <div id="step-4" class="surveyAreaStep"></div>
+                    <div id="step-5" class="surveyAreaStep"></div>
+                </div>
+                <div class="mainAreaLogo">
+                    <img class="mainAreaImg" src="./images/main-area-pic-1pers_v2.png">
+                    <img class="mainAreaImg" src="./images/main-area-pic-2pers_v2.png">
+                    <img class="mainAreaImg" src="./images/main-area-pic-3pers_v2.png">
+                    <img class="mainAreaImg" src="./images/main-area-pic-3pers-rounded_v2.png">
+                </div>
+                <div class="surveyThemesArea">
+                    <div id="theme-1" class="singleTheme">
+                        <div class="themeIcon iconHouse"></div>
+                        <span>Lebens-<br>
+                          situation</span>
+                    </div>
+                    <div id="theme-2" class="singleTheme">
+                        <div class="themeIcon iconCase"></div>
+                        <span>Beruf</span>
+                    </div>
+                    <div id="theme-3" class="singleTheme">
+                        <div class="themeIcon iconMoney"></div>
+                        <span>Vermögen</span>
+                    </div>
+                    <div id="theme-4" class="singleTheme">
+                        <div class="themeIcon iconLeisure"></div>
+                        <span>Freizeit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
